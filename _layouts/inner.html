@@ -1,15 +1,28 @@
 {% include header.html %}
 
-  <article>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-8 col-md-offset-2">
+<article>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
 
-          {{ content }}
+        {{ content }}
 
-        </div>
+        {% if page.project_link %}
+        <ul class="actions">
+          <li>
+            <a href="{{ page.project_link }}" class="button">
+              {% if page.button_icon %}
+                <i class="fa fa-{{ page.button_icon }}"></i>
+              {% endif %}
+              {{ page.button_text }}
+            </a>
+          </li>
+        </ul>
+        {% endif %}
+
       </div>
     </div>
-  </article>
+  </div>
+</article>
 
 {% include footer.html %}
