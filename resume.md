@@ -10,7 +10,7 @@ You can view my resume below or download a copy.
 
 <ul class="actions">
   <li>
-    <a href="{{ '/Resume_Jesse_McDonald.pdf' | /Resume_Jesse_McDonald.pdf }}"
+    <a href="{{ '/Resume_Jesse_McDonald.pdf' | relative_url }}"
        class="button primary"
        target="_blank">
       Download PDF
@@ -19,7 +19,7 @@ You can view my resume below or download a copy.
 </ul>
 
 <object
-    data="{{ '/Resume_Jesse_McDonald.pdf' | /Resume_Jesse_McDonald.pdf }}"
+    data="{{ '/Resume_Jesse_McDonald.pdf' | relative_url }}"
     type="application/pdf"
     width="100%"
     height="1000px">
