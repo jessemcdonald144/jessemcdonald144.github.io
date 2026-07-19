@@ -93,6 +93,8 @@ The system successfully:
 
 ## Gallery
 
+![Component Layout] (/img/posts/iot_layout.png)
+
 ![Jetson Nano](/images/traffic_sensor/jetson.jpg)
 
 ![3D Printed Enclosure](/images/traffic_sensor/enclosure.jpg)
