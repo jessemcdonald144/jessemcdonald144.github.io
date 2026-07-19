@@ -18,7 +18,7 @@ email: 'jessemcdonald144@gmail.com'
 description: "Computer engineer building intelligent hardware systems."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://github.com/jessemcdonald144" # the base hostname & protocol for your site, e.g. https://example.com
-resume: '/Resume_Jesse_McDonald.pdf'
+resume: '/resume.md'
 linkedin: "https://www.linkedin.com/in/jmcdonald-1/"
 github_username: 'jessemcdonald144'
 
