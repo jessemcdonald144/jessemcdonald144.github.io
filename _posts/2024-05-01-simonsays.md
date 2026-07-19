@@ -7,7 +7,7 @@ categories: hardware software
 tags: embeddedsystems 
 featured_image: 'img/posts/simonsays/frdm.jpg'
 project_link: 'https://pages.github.coecis.cornell.edu/ece3140-sp2025/iab35-jm2484-yc2542/'
-button_icon: 'right-arrow'
+button_icon: 'arrow-right'
 button_text: 'Visit Project'
 lead_text: "Implemented a Simon Says memory game entirely in ARM assembly, utilizing interrupt-driven input, hardware peripherals, timers, LEDs, and an LCD interface on the FRDM-KL46Z development board."
 ---
