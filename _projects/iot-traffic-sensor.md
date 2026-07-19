@@ -95,11 +95,11 @@ The system successfully:
 
 ![Component Layout] (/img/posts/iot_layout.png)
 
-![Jetson Nano](/images/traffic_sensor/jetson.jpg)
+![3D Printed Enclosure](img/posts/iot/iot_case.png)
 
-![3D Printed Enclosure](/images/traffic_sensor/enclosure.jpg)
+![Deployment](img/posts/iot/deploy_2.gif)
 
-![Detection Results](/images/traffic_sensor/results.png)
+![Detection Results](img/posts/iot/deploy_results.png)
 
 ---
 
