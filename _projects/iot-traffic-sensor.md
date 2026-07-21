@@ -9,7 +9,7 @@ nav: false
 
 # IoT Traffic Sensor
 
-**Course:** Internet of Thingss
+**Course:** Internet of Things
 **Semester:** Spring 2026
 
 ---
@@ -36,11 +36,16 @@ LoRaWAN, and captured video is deleted immediately after processing.
 
 ## Hardware
 
+
+![Component Layout](/img/posts/iot/iot_hardware.png)
+
 - NVIDIA Jetson Nano
 - Raspberry Pi CSI Camera
 - Feather M0 LoRaWAN Board
 - Grid Power Supply
 - Custom 3D-printed enclosure
+
+![3D Printed Enclosure](/img/posts/iot/iot_case.png)
 
 ---
 
@@ -93,16 +98,35 @@ The system successfully:
 
 ## Gallery
 
-![Component Layout](/img/posts/iot/iot_hardware.png)
-
-![3D Printed Enclosure](/img/posts/iot/iot_case.png)
-
 ![Deployment](/img/posts/iot/deploy_2.gif)
 
 ![Detection Results](/img/posts/iot/deploy_results.png)
 ---
 
-## GitHub
+<h2>GitHub</h2>
 
-**Repository:**  
-https://github.com/jessemcdonald144/edge-vit-pipeline
+<a href="https://github.com/jessemcdonald144/edge-vit-pipeline"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="github-button">
+  View GitHub Repository
+</a>
+
+<style>
+.github-button {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #24292e;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.github-button:hover {
+  color: white;
+  opacity: 0.85;
+  transform: translateY(-1px);
+}
+</style>
