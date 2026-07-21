@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: inner
 title: "IoT Traffic Sensor"
 permalink: /projects/iot-traffic-sensor/
 description: "Edge AI traffic monitoring using Jetson Nano, YOLOv8, and LoRaWAN."
@@ -9,7 +9,7 @@ nav: false
 
 # IoT Traffic Sensor
 
-**Course:** Internet of Things
+**Course:** Internet of Thingss
 **Semester:** Spring 2026
 
 ---
@@ -106,4 +106,4 @@ The system successfully:
 ## GitHub
 
 **Repository:**  
-https://github.com/jessemcdonald144/<repository-name>
+https://github.com/jessemcdonald144/edge-vit-pipeline

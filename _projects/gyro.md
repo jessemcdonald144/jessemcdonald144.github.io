@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: inner
 title: "MEMS Gyroscope Design"
 permalink: /projects/mems-gyroscope/
 description: "Designed and simulated a MEMS single-axis gyroscope using COMSOL Multiphysics to satisfy sensitivity and fabrication constraints."
