@@ -107,26 +107,9 @@ The system successfully:
 
 <a href="https://github.com/jessemcdonald144/edge-vit-pipeline"
    target="_blank"
-   rel="noopener noreferrer"
-   class="github-button">
-  View GitHub Repository
+   rel="noopener noreferrer">
+  <button class="btn btn-default btn-lg">
+    <i class="fa fa-github fa-lg"></i>
+    GitHub
+  </button>
 </a>
-
-<style>
-.github-button {
-  display: inline-block;
-  padding: 12px 20px;
-  background-color: #24292e;
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  border-radius: 6px;
-  transition: opacity 0.2s ease, transform 0.2s ease;
-}
-
-.github-button:hover {
-  color: white;
-  opacity: 0.85;
-  transform: translateY(-1px);
-}
-</style>

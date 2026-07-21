@@ -1,7 +1,7 @@
 ---
 layout: inner
 title: "MEMS Gyroscope Design"
-permalink: /projects/mems-gyroscope/
+permalink: /projects/gyro/
 description: "Designed and simulated a MEMS single-axis gyroscope using COMSOL Multiphysics to satisfy sensitivity and fabrication constraints."
 image: /images/mems/banner.jpg
 nav: false
