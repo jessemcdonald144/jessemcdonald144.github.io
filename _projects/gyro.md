@@ -85,7 +85,7 @@ The completed design successfully:
   </div>
 
   <div class="6u$ 12u$(small)">
-    <img src="img/posts/mems/gyro1.png" alt="Drive Mode" style="width:100%;">
+    <img src="/img/posts/mems/gyro1.png" alt="Drive Mode" style="width:100%;">
     <p align="center"><em>Drive Mode Simulation</em></p>
   </div>
 </div>

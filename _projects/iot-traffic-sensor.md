@@ -98,7 +98,7 @@ The system successfully:
 
 ## Gallery
 
-![Deployment](/img/posts/iot/deploy_2.gif)
+![Deployment](/img/posts/iot/deploy.gif)
 
 ![Detection Results](/img/posts/iot/deploy_results.png)
 ---
