@@ -93,14 +93,13 @@ The system successfully:
 
 ## Gallery
 
-![Component Layout] (/img/posts/iot_layout.png)
+![Component Layout](/img/posts/iot/iot_hardware.png)
 
-![3D Printed Enclosure](img/posts/iot/iot_case.png)
+![3D Printed Enclosure](/img/posts/iot/iot_case.png)
 
-![Deployment](img/posts/iot/deploy_2.gif)
+![Deployment](/img/posts/iot/deploy_2.gif)
 
-![Detection Results](img/posts/iot/deploy_results.png)
-
+![Detection Results](/img/posts/iot/deploy_results.png)
 ---
 
 ## GitHub
