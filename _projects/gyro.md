@@ -15,7 +15,7 @@ nav: false
 
 ## Project Overview
 
-This project focused on designing a manufacturable, single-axis MEMS gyroscope for angular-velocity sensing in a 2µm² area. I developed the device geometry and used COMSOL Multiphysics to determine its resonant behavior and refine the suspension system.
+This project focused on designing a manufacturable, single-axis MEMS gyroscope for angular-velocity sensing in a 4µm² area. I developed the device geometry and used COMSOL Multiphysics to determine its resonant behavior and refine the suspension system.
 
 The sensor uses electrostatic actuation to drive a suspended proof mass. When the device rotates, the Coriolis effect produces motion in the perpendicular sense direction, which can be measured capacitively.
 

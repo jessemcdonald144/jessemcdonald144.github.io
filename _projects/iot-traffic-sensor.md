@@ -32,7 +32,7 @@ The pipeline follows six steps:
 5. Send the summarized data over LoRaWAN.
 6. Delete the processed frame.
 
-### Hardware Architecture
+### Hardware Design
 
 <figure style="margin-bottom: 40px;">
   <img src="/img/posts/iot/iot_hardware.png"
