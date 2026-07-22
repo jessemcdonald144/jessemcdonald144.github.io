@@ -2,114 +2,103 @@
 layout: inner
 title: "IoT Traffic Sensor"
 permalink: /projects/iot-traffic-sensor/
-description: "Edge AI traffic monitoring using Jetson Nano, YOLOv8, and LoRaWAN."
-image: /images/traffic_sensor/banner.jpg
+description: "Privacy-focused edge AI traffic monitoring using a Jetson Nano, YOLOv8, and LoRaWAN."
 nav: false
 ---
 
 # IoT Traffic Sensor
 
-**Course:** Internet of Things
+**Course:** Internet of Things  
 **Semester:** Spring 2026
 
----
+## Project Overview
 
-## Overview
+This project is a privacy-focused traffic monitoring system that detects and classifies passing vehicles at the edge. A Raspberry Pi camera captures the roadway, an NVIDIA Jetson Nano runs YOLOv8 locally, and a Feather M0 transmits only summarized vehicle counts over LoRaWAN. Images are discarded after processing rather than uploaded or stored.
 
-This project developed an edge-based traffic monitoring system capable of
-classifying passing vehicles while preserving privacy. Rather than streaming
-video to the cloud, all computer vision processing occurs locally on an
-NVIDIA Jetson Nano. Only aggregate traffic statistics are transmitted over
-LoRaWAN, and captured video is deleted immediately after processing.
+The final system was designed to:
 
----
+- Count and classify cars, trucks, vans, and other vehicles
+- Minimize network bandwidth by transmitting metadata instead of video
+- Protect privacy through local image processing and immediate frame deletion
+- Operate as a compact, weather-resistant roadside device
 
-## Objectives
+## System Design
 
-- Monitor traffic volume
-- Classify vehicle types (cars, trucks, vans)
-- Estimate environmental traffic loading
-- Minimize bandwidth usage
-- Preserve user privacy
+The sensing pipeline follows six steps:
 
----
+1. Capture a frame with the CSI camera.
+2. Run YOLOv8 inference on the Jetson Nano.
+3. Identify and classify vehicles in the frame.
+4. Aggregate vehicle counts locally.
+5. Send the summarized data over LoRaWAN.
+6. Delete the processed frame.
 
-## Hardware
+### Hardware Architecture
 
+<figure>
+  <img src="/img/posts/iot/iot_hardware.png"
+       alt="IoT traffic sensor hardware components and system layout"
+       style="width: 100%; height: auto;">
+  <figcaption><em>Figure 1. Hardware architecture showing the Jetson Nano, camera, LoRaWAN board, and supporting power components.</em></figcaption>
+</figure>
 
-![Component Layout](/img/posts/iot/iot_hardware.png)
+The prototype used:
 
 - NVIDIA Jetson Nano
-- Raspberry Pi CSI Camera
-- Feather M0 LoRaWAN Board
-- Grid Power Supply
+- Raspberry Pi CSI camera
+- Feather M0 LoRaWAN board
+- Grid-connected power supply
 - Custom 3D-printed enclosure
 
-![3D Printed Enclosure](/img/posts/iot/iot_case.png)
+### Mechanical Design
 
----
+<figure>
+  <img src="/img/posts/iot/iot_case.png"
+       alt="Custom 3D-printed enclosure for the IoT traffic sensor"
+       style="width: 100%; height: auto;">
+  <figcaption><em>Figure 2. Custom enclosure designed in Fusion 360 to organize and protect the sensing hardware.</em></figcaption>
+</figure>
 
-## Software
+## Implementation
 
-- Python
-- YOLOv8
-- OpenCV
-- LoRaWAN
-- Fusion 360
+The software stack included Python, YOLOv8, OpenCV, and LoRaWAN communication. Fusion 360 was used to design the enclosure and integrate the camera, embedded computer, radio board, and power components into a deployable package.
 
----
+## Deployment and Results
 
-## System Architecture
+<figure>
+  <img src="/img/posts/iot/deploy.gif"
+       alt="IoT traffic sensor operating during roadside deployment"
+       style="width: 100%; height: auto;">
+  <figcaption><em>Figure 3. Roadside deployment of the completed traffic-sensing prototype.</em></figcaption>
+</figure>
 
-1. Capture images using the CSI camera.
-2. Execute YOLOv8 inference locally.
-3. Count and classify vehicles.
-4. Aggregate metadata.
-5. Transmit results over LoRaWAN.
-6. Delete video frames after processing.
+<figure>
+  <img src="/img/posts/iot/deploy_results.png"
+       alt="YOLOv8 vehicle detection and classification results"
+       style="width: 100%; height: auto;">
+  <figcaption><em>Figure 4. Example YOLOv8 output showing vehicle detection and classification during testing.</em></figcaption>
+</figure>
 
----
+The completed prototype successfully performed local vehicle detection and classification, transmitted aggregate traffic information over LoRaWAN, and avoided sending or retaining roadway video. This demonstrated a practical approach to low-bandwidth, privacy-conscious traffic monitoring.
 
-## Results
+## Technical Skills
 
-The system successfully:
+Embedded systems, computer vision, edge AI, Python, OpenCV, YOLOv8, LoRaWAN, CAD design, Fusion 360, and rapid prototyping.
 
-- Classified multiple vehicle categories
-- Operated entirely on edge hardware
-- Reduced network bandwidth by transmitting only metadata
-- Preserved privacy by eliminating stored video
-
----
-
-## Skills Demonstrated
-
-- Embedded Systems
-- Computer Vision
-- Edge AI
-- Machine Learning
-- Internet of Things
-- LoRaWAN Networking
-- Python Development
-- CAD Design
-- Fusion 360
-- Rapid Prototyping
-
----
-
-## Gallery
-
-![Deployment](/img/posts/iot/deploy.gif)
-
-![Detection Results](/img/posts/iot/deploy_results.png)
----
-
-<h2>GitHub</h2>
+## Project Resources
 
 <a href="https://github.com/jessemcdonald144/edge-vit-pipeline"
    target="_blank"
-   rel="noopener noreferrer">
-  <button class="btn btn-default btn-lg">
-    <i class="fa fa-github fa-lg"></i>
-    GitHub
-  </button>
+   rel="noopener noreferrer"
+   class="btn btn-default btn-lg">
+  <i class="fa fa-github fa-lg"></i>
+  GitHub Repository
+</a>
+
+<a href="https://docs.google.com/presentation/d/1Neh7iUO9mIBXUF-v6fONAZ-haAOQD0Q9yqrP8UCiWfY/edit?usp=sharing"
+   target="_blank"
+   rel="noopener noreferrer"
+   class="btn btn-default btn-lg">
+  <i class="fa fa-file-powerpoint-o fa-lg"></i>
+  Final Design Review
 </a>
