@@ -34,7 +34,7 @@ The pipeline follows six steps:
 
 ### Hardware Architecture
 
-<figure>
+<figure style="margin-bottom: 40px;">
   <img src="/img/posts/iot/iot_hardware.png"
        alt="IoT traffic sensor hardware components and system layout"
        style="width: 100%; height: auto;">
@@ -64,14 +64,14 @@ The prototype used:
   <img src="/img/posts/iot/deploy.gif"
        alt="IoT traffic sensor operating during roadside deployment"
        style="width: 100%; height: auto;">
-  <figcaption><em>Figure 3. Roadside deployment of the completed traffic-sensing prototype.</em></figcaption>
+  <figcaption style="margin-top: 15px; text-align: center;"><em>Figure 3. Roadside deployment of the completed traffic-sensing prototype.</em></figcaption>
 </figure>
 
 <figure>
   <img src="/img/posts/iot/deploy_results.png"
        alt="YOLOv8 vehicle detection and classification results"
        style="width: 100%; height: auto;">
-  <figcaption><em>Figure 4. Example YOLOv8 output showing vehicle detection and classification during testing.</em></figcaption>
+  <figcaption style="margin-top: 15px; text-align: center;"><em>Figure 4. Example YOLOv8 output showing vehicle detection and classification during testing.</em></figcaption>
 </figure>
 
 ## Project Resources
