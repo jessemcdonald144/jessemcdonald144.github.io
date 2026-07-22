@@ -38,7 +38,7 @@ The pipeline follows six steps:
   <img src="/img/posts/iot/iot_hardware.png"
        alt="IoT traffic sensor hardware components and system layout"
        style="width: 100%; height: auto;">
-  <figcaption><em>Figure 1. Hardware architecture showing the Jetson Nano, camera, LoRaWAN board, and power components.</em></figcaption>
+  <figcaption style="text-align: center;"><em>Figure 1. Hardware architecture showing the Jetson Nano, camera, LoRaWAN board, and power components.</em></figcaption>
 </figure>
 
 The prototype used:
@@ -55,7 +55,7 @@ The prototype used:
   <img src="/img/posts/iot/iot_case.png"
        alt="Custom 3D-printed enclosure for the IoT traffic sensor"
        style="width: 100%; height: auto;">
-  <figcaption><em>Figure 2. Custom enclosure designed in Fusion 360 to organize and protect the hardware.</em></figcaption>
+  <figcaption style="text-align: center;"><em>Figure 2. Custom enclosure designed in Fusion 360 to organize and protect the hardware.</em></figcaption>
 </figure>
 
 ## Deployment and Results
