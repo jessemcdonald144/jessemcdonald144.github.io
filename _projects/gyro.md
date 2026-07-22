@@ -2,8 +2,7 @@
 layout: inner
 title: "MEMS Gyroscope Design"
 permalink: /projects/gyro/
-description: "Designed and simulated a MEMS single-axis gyroscope using COMSOL Multiphysics to satisfy sensitivity and fabrication constraints."
-image: /images/mems/banner.jpg
+description: "Designed and simulated a single-axis MEMS gyroscope in COMSOL Multiphysics, balancing sensitivity, resonant behavior, and fabrication constraints."
 nav: false
 ---
 
@@ -16,99 +15,73 @@ nav: false
 
 ## Project Overview
 
-This project explored the design and simulation of a microelectromechanical systems (MEMS) gyroscope capable of accurately measuring angular velocity. Using finite element analysis in COMSOL Multiphysics, the device geometry was iteratively optimized to satisfy sensitivity, resonant frequency, and fabrication constraints while maintaining a compact footprint suitable for silicon microfabrication.
+This project focused on designing a manufacturable, single-axis MEMS gyroscope for angular-velocity sensing. I developed the device geometry and used COMSOL Multiphysics to define its resonant behavior, refine the suspension system, and verify that the final design met performance and fabrication constraints.
 
-The project combined concepts from mechanical design, semiconductor fabrication, and computational modeling to evaluate sensor performance prior to fabrication.
-
----
-
-## Objectives
-
-- Design a manufacturable MEMS inertial gyroscope
-- Optimize sensitivity and resonant frequency
-- Meet specified device area constraints
-- Simulate mechanical behavior using finite element analysis
-- Evaluate fabrication feasibility
+The sensor uses electrostatic actuation to drive a suspended proof mass. When the device rotates, the Coriolis effect produces motion in the perpendicular sense direction, which can be measured capacitively.
 
 ---
 
-## Design Process
+## Design Requirements
 
-The gyroscope was developed through an iterative engineering workflow:
+The final device needed to:
 
-- Designed the proof mass, suspension springs, and comb-drive geometry
-- Modeled the complete structure in COMSOL Multiphysics
-- Performed eigenfrequency analysis to identify drive and sense modes
-- Optimized structural dimensions through parametric sweeps
-- Verified that the final design met project performance specifications
-
----
-
-## Technologies
-
-- COMSOL Multiphysics
-- L-Edit
-- MATLAB
-- CAD Design
+- Fit within the specified fabrication area
+- Provide sufficient angular-rate sensitivity
+- Maintain distinct drive and sense resonant modes
+- Use geometry compatible with silicon microfabrication
+- Remain mechanically stable throughout the operating range
 
 ---
 
-## Engineering Concepts
+## Design and Simulation Process
 
-- MEMS Sensor Design
-- Finite Element Analysis (FEA)
-- Vibrational Mechanics
-- Capacitive Sensing
-- Electrostatic Actuation
-- Silicon Microfabrication
-- Resonant Systems
+1. Created the proof mass, suspension springs, anchors, and comb-drive structures.
+2. Built the complete device model in COMSOL Multiphysics.
+3. Performed eigenfrequency analysis to identify the drive and sense modes.
+4. Adjusted spring and mass dimensions through iterative simulations.
+5. Checked the final layout against sensitivity, frequency, area, and fabrication requirements.
 
 ---
 
-## Results
+## Final Device Layout
 
-The completed design successfully:
+<figure style="margin-bottom: 40px;">
+  <img src="/img/posts/mems/gyro2.png"
+       alt="Final layout of the single-axis MEMS gyroscope"
+       style="display:block; width:100%; max-width:950px; height:auto; margin:0 auto;">
+  <figcaption style="text-align:center; margin-top:10px;">
+    <em>Figure 1. Final gyroscope layout showing the proof mass, suspension springs, anchors, and capacitive comb structures.</em>
+  </figcaption>
+</figure>
 
-- Achieved the required sensitivity target
-- Met fabrication area constraints
-- Produced well-separated drive and sense resonant modes
-- Demonstrated stable dynamic behavior through simulation
+The symmetric layout supports controlled in-plane motion while reducing unwanted mechanical coupling. The suspension geometry was refined to balance structural flexibility with adequate stability.
 
 ---
 
-## Gallery
+## Modal Analysis
 
 <div class="row">
   <div class="6u 12u$(small)">
-    <img src="/img/projects/mems/gyro2.png" alt="MEMS Layout" style="width:100%;">
-    <p align="center"><em>Gyroscope Layout</em></p>
+    <figure style="margin-bottom: 40px;">
+      <img src="/img/posts/mems/gyro1.png"
+           alt="COMSOL drive-mode simulation of the MEMS gyroscope"
+           style="display:block; width:100%; height:auto; margin:0 auto;">
+      <figcaption style="text-align:center; margin-top:10px;">
+        <em>Figure 2. Drive mode: the proof mass oscillates along the actuation axis.</em>
+      </figcaption>
+    </figure>
   </div>
 
   <div class="6u$ 12u$(small)">
-    <img src="/img/posts/mems/gyro1.png" alt="Drive Mode" style="width:100%;">
-    <p align="center"><em>Drive Mode Simulation</em></p>
-  </div>
-</div>
-
-<div class="row">
-  <div class="12u$">
-    <img src="/img/projects/mems/gyro0.png" alt="Sense Mode" style="width:100%;">
-    <p align="center"><em>Sense Mode Simulation</em></p>
+    <figure style="margin-bottom: 40px;">
+      <img src="/img/posts/mems/gyro0.png"
+           alt="COMSOL sense-mode simulation of the MEMS gyroscope"
+           style="display:block; width:100%; height:auto; margin:0 auto;">
+      <figcaption style="text-align:center; margin-top:10px;">
+        <em>Figure 3. Sense mode: Coriolis-induced motion occurs perpendicular to the drive direction.</em>
+      </figcaption>
+    </figure>
   </div>
 </div>
 
 ---
-
-## Skills Demonstrated
-
-- MEMS Design
-- Finite Element Modeling
-- COMSOL Multiphysics
-- Mechanical Simulation
-- Semiconductor Fabrication
-- Engineering Optimization
-- Technical Documentation
-
----
-
-This project strengthened my understanding of MEMS sensor development by combining computational modeling with semiconductor manufacturing principles. Through iterative simulation and optimization, I gained experience designing microscale devices that satisfy both performance and fabrication requirements.

@@ -13,18 +13,17 @@ nav: false
 
 ## Project Overview
 
-This project is a privacy-focused traffic monitoring system that detects and classifies passing vehicles at the edge. A Raspberry Pi camera captures the roadway, an NVIDIA Jetson Nano runs YOLOv8 locally, and a Feather M0 transmits only summarized vehicle counts over LoRaWAN. Images are discarded after processing rather than uploaded or stored.
+This project is a privacy-focused traffic monitoring system that detects and classifies passing vehicles. Images are discarded after processing.
 
 The final system was designed to:
 
 - Count and classify cars, trucks, vans, and other vehicles
 - Minimize network bandwidth by transmitting metadata instead of video
 - Protect privacy through local image processing and immediate frame deletion
-- Operate as a compact, weather-resistant roadside device
 
 ## System Design
 
-The sensing pipeline follows six steps:
+The pipeline follows six steps:
 
 1. Capture a frame with the CSI camera.
 2. Run YOLOv8 inference on the Jetson Nano.
@@ -39,7 +38,7 @@ The sensing pipeline follows six steps:
   <img src="/img/posts/iot/iot_hardware.png"
        alt="IoT traffic sensor hardware components and system layout"
        style="width: 100%; height: auto;">
-  <figcaption><em>Figure 1. Hardware architecture showing the Jetson Nano, camera, LoRaWAN board, and supporting power components.</em></figcaption>
+  <figcaption><em>Figure 1. Hardware architecture showing the Jetson Nano, camera, LoRaWAN board, and power components.</em></figcaption>
 </figure>
 
 The prototype used:
@@ -52,20 +51,16 @@ The prototype used:
 
 ### Mechanical Design
 
-<figure>
+<figure style="margin-bottom: 40px;">
   <img src="/img/posts/iot/iot_case.png"
        alt="Custom 3D-printed enclosure for the IoT traffic sensor"
        style="width: 100%; height: auto;">
-  <figcaption><em>Figure 2. Custom enclosure designed in Fusion 360 to organize and protect the sensing hardware.</em></figcaption>
+  <figcaption><em>Figure 2. Custom enclosure designed in Fusion 360 to organize and protect the hardware.</em></figcaption>
 </figure>
-
-## Implementation
-
-The software stack included Python, YOLOv8, OpenCV, and LoRaWAN communication. Fusion 360 was used to design the enclosure and integrate the camera, embedded computer, radio board, and power components into a deployable package.
 
 ## Deployment and Results
 
-<figure>
+<figure style="margin-bottom: 40px;">
   <img src="/img/posts/iot/deploy.gif"
        alt="IoT traffic sensor operating during roadside deployment"
        style="width: 100%; height: auto;">
@@ -78,12 +73,6 @@ The software stack included Python, YOLOv8, OpenCV, and LoRaWAN communication. F
        style="width: 100%; height: auto;">
   <figcaption><em>Figure 4. Example YOLOv8 output showing vehicle detection and classification during testing.</em></figcaption>
 </figure>
-
-The completed prototype successfully performed local vehicle detection and classification, transmitted aggregate traffic information over LoRaWAN, and avoided sending or retaining roadway video. This demonstrated a practical approach to low-bandwidth, privacy-conscious traffic monitoring.
-
-## Technical Skills
-
-Embedded systems, computer vision, edge AI, Python, OpenCV, YOLOv8, LoRaWAN, CAD design, Fusion 360, and rapid prototyping.
 
 ## Project Resources
 

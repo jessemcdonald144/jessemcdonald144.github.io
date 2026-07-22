@@ -4,7 +4,7 @@ position: left
 title: 'Embedded Systems Simon Says Game'
 date: 2024-05-01 21:15:00
 categories: hardware software
-tags: EmbeddedSystems 
+tags: EmbeddedSystems Assembly
 featured_image: 'img/posts/simonsays/frdm.png'
 project_link: 'https://pages.github.coecis.cornell.edu/ece3140-sp2025/iab35-jm2484-yc2542/'
 button_icon: 'arrow-right'
