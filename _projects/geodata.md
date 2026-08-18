@@ -8,8 +8,9 @@ nav: false
 
 <img src="/images/lakeeffect.png" alt="Lake Effect Snow project" style="width:100%; max-width:900px;">
 
-## Lake Effect Snow Sensor
+## Lake Effect Snow Model
 
 This project was developed with **CU GeoData**, a Cornell student team focused on building low-cost environmental sensing systems for earth science research.
 
 [See more CU GeoData projects](https://cugeodata.com/)
+[See my published research with CU GeoData](https://essopenarchive.org/doi/full/10.22541/essoar.176677838.84313234/v1)
