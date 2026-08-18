@@ -13,4 +13,5 @@ nav: false
 This project was developed with **CU GeoData**, a Cornell student team focused on building low-cost environmental sensing systems for earth science research.
 
 [See more CU GeoData projects](https://cugeodata.com/)
+<br>
 [See my published research with CU GeoData](https://essopenarchive.org/doi/full/10.22541/essoar.176677838.84313234/v1)
