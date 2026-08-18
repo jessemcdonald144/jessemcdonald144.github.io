@@ -6,7 +6,7 @@ description: "An environmental sensing project developed with CU GeoData to stud
 nav: false
 ---
 
-<img src="/images/lakeeffect.png" alt="Lake Effect Snow project" style="width:100%; max-width:900px;">
+<img src="/img/posts/lakeeffect/lakeeffect.png" alt="Lake Effect Snow project" style="width:100%; max-width:900px;">
 
 ## Lake Effect Snow Model
 
